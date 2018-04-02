@@ -30,7 +30,7 @@
         {
             this.txtRequestURI = new System.Windows.Forms.TextBox();
             this.txtResponse = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cmdGO = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
@@ -64,15 +64,15 @@
             this.txtResponse.Size = new System.Drawing.Size(483, 176);
             this.txtResponse.TabIndex = 1;
             // 
-            // button1
+            // cmdGO
             // 
-            this.button1.Location = new System.Drawing.Point(524, 21);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Go!";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.cmdGO.Location = new System.Drawing.Point(524, 21);
+            this.cmdGO.Name = "cmdGO";
+            this.cmdGO.Size = new System.Drawing.Size(75, 23);
+            this.cmdGO.TabIndex = 2;
+            this.cmdGO.Text = "Go!";
+            this.cmdGO.UseVisualStyleBackColor = true;
+            this.cmdGO.Click += new System.EventHandler(this.cmdGO_Click);
             // 
             // label2
             // 
@@ -165,7 +165,6 @@
             this.rdoNTMLAuth.Name = "rdoNTMLAuth";
             this.rdoNTMLAuth.Size = new System.Drawing.Size(108, 17);
             this.rdoNTMLAuth.TabIndex = 13;
-            this.rdoNTMLAuth.TabStop = true;
             this.rdoNTMLAuth.Text = "NTLM (Windows)";
             this.rdoNTMLAuth.UseVisualStyleBackColor = true;
             // 
@@ -188,7 +187,6 @@
             this.rdoNetCred.Name = "rdoNetCred";
             this.rdoNetCred.Size = new System.Drawing.Size(140, 17);
             this.rdoNetCred.TabIndex = 15;
-            this.rdoNetCred.TabStop = true;
             this.rdoNetCred.Text = "NetworkCredential Class";
             this.rdoNetCred.UseVisualStyleBackColor = true;
             // 
@@ -205,7 +203,7 @@
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cmdGO);
             this.Controls.Add(this.txtResponse);
             this.Controls.Add(this.txtRequestURI);
             this.Name = "Form1";
@@ -223,7 +221,7 @@
 
         private System.Windows.Forms.TextBox txtRequestURI;
         private System.Windows.Forms.TextBox txtResponse;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button cmdGO;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtUserName;

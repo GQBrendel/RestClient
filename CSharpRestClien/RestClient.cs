@@ -14,10 +14,25 @@ namespace CSharpRestClien
         POST
     }
 
+    public enum authenticationType
+    {
+        Basic,
+        NTLM
+    }
+    public enum authenticationTechnique
+    {
+        RollYourOwn,
+        NetworkCredential
+    }
+
     class RestClient
     {
         public string endPoint { get; set; }
         public httpVerb httpMethod { get; set; }
+        public authenticationType authType { get; set; }
+        public authenticationTechnique authTech { get; set; }
+        public string userName { get; set; }
+        public string userPassword { get; set; }
 
         public RestClient()
         {
@@ -30,6 +45,9 @@ namespace CSharpRestClien
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(endPoint);
             request.Method = httpMethod.ToString();
 
+
+            string authHeader = System.Convert.ToBase64String(System.Text.ASCIIEncoding.ASCII.GetBytes(userName + ":" + userPassword));
+            request.Headers.Add("Authorization", authType.ToString() + " " + authHeader);
             HttpWebResponse response = null;
             try
             {

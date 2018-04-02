@@ -17,10 +17,14 @@ namespace CSharpRestClien
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void cmdGO_Click(object sender, EventArgs e)
         {
             RestClient rClient = new RestClient();
             rClient.endPoint = txtRequestURI.Text;
+            //rClient.authTech = authenticationTechnique.RollYourOwn;
+            rClient.authType = authenticationType.Basic;
+            rClient.userName = txtUserName.Text ;
+            rClient.userPassword = txtPassword.Text;
 
             DebugOutput("Rest Client Created");
             string strResponse = string.Empty;
