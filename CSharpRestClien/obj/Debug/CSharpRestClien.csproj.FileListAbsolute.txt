@@ -8,3 +8,13 @@ C:\Users\Developer\source\repos\CSharpRestClien\CSharpRestClien\obj\Debug\CSharp
 C:\Users\Developer\source\repos\CSharpRestClien\CSharpRestClien\obj\Debug\CSharpRestClien.csproj.CoreCompileInputs.cache
 C:\Users\Developer\source\repos\CSharpRestClien\CSharpRestClien\obj\Debug\CSharpRestClien.exe
 C:\Users\Developer\source\repos\CSharpRestClien\CSharpRestClien\obj\Debug\CSharpRestClien.pdb
+C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\CSharpRestClien\bin\Debug\CSharpRestClien.exe.config
+C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\CSharpRestClien\bin\Debug\CSharpRestClien.exe
+C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\CSharpRestClien\bin\Debug\CSharpRestClien.pdb
+C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\CSharpRestClien\obj\Debug\CSharpRestClien.csprojResolveAssemblyReference.cache
+C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\CSharpRestClien\obj\Debug\CSharpRestClien.Form1.resources
+C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\CSharpRestClien\obj\Debug\CSharpRestClien.Properties.Resources.resources
+C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\CSharpRestClien\obj\Debug\CSharpRestClien.csproj.GenerateResource.cache
+C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\CSharpRestClien\obj\Debug\CSharpRestClien.csproj.CoreCompileInputs.cache
+C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\CSharpRestClien\obj\Debug\CSharpRestClien.exe
+C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\CSharpRestClien\obj\Debug\CSharpRestClien.pdb
