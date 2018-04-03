@@ -36,13 +36,13 @@
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rdoNTMLAuth = new System.Windows.Forms.RadioButton();
+            this.rdoBasicAuth = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rdoNetCred = new System.Windows.Forms.RadioButton();
+            this.rdoRollOwn = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.rdoBasicAuth = new System.Windows.Forms.RadioButton();
-            this.rdoNTMLAuth = new System.Windows.Forms.RadioButton();
-            this.rdoRollOwn = new System.Windows.Forms.RadioButton();
-            this.rdoNetCred = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -103,6 +103,7 @@
             // 
             this.txtPassword.Location = new System.Drawing.Point(380, 48);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(124, 20);
             this.txtPassword.TabIndex = 7;
             // 
@@ -117,6 +118,28 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Auth Type";
             // 
+            // rdoNTMLAuth
+            // 
+            this.rdoNTMLAuth.AutoSize = true;
+            this.rdoNTMLAuth.Location = new System.Drawing.Point(23, 42);
+            this.rdoNTMLAuth.Name = "rdoNTMLAuth";
+            this.rdoNTMLAuth.Size = new System.Drawing.Size(108, 17);
+            this.rdoNTMLAuth.TabIndex = 13;
+            this.rdoNTMLAuth.Text = "NTLM (Windows)";
+            this.rdoNTMLAuth.UseVisualStyleBackColor = true;
+            // 
+            // rdoBasicAuth
+            // 
+            this.rdoBasicAuth.AutoSize = true;
+            this.rdoBasicAuth.Checked = true;
+            this.rdoBasicAuth.Location = new System.Drawing.Point(23, 19);
+            this.rdoBasicAuth.Name = "rdoBasicAuth";
+            this.rdoBasicAuth.Size = new System.Drawing.Size(122, 17);
+            this.rdoBasicAuth.TabIndex = 12;
+            this.rdoBasicAuth.TabStop = true;
+            this.rdoBasicAuth.Text = "Basic Authentication";
+            this.rdoBasicAuth.UseVisualStyleBackColor = true;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.rdoNetCred);
@@ -127,6 +150,28 @@
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Technique";
+            // 
+            // rdoNetCred
+            // 
+            this.rdoNetCred.AutoSize = true;
+            this.rdoNetCred.Location = new System.Drawing.Point(19, 40);
+            this.rdoNetCred.Name = "rdoNetCred";
+            this.rdoNetCred.Size = new System.Drawing.Size(140, 17);
+            this.rdoNetCred.TabIndex = 15;
+            this.rdoNetCred.Text = "NetworkCredential Class";
+            this.rdoNetCred.UseVisualStyleBackColor = true;
+            // 
+            // rdoRollOwn
+            // 
+            this.rdoRollOwn.AutoSize = true;
+            this.rdoRollOwn.Checked = true;
+            this.rdoRollOwn.Location = new System.Drawing.Point(19, 17);
+            this.rdoRollOwn.Name = "rdoRollOwn";
+            this.rdoRollOwn.Size = new System.Drawing.Size(93, 17);
+            this.rdoRollOwn.TabIndex = 14;
+            this.rdoRollOwn.TabStop = true;
+            this.rdoRollOwn.Text = "Roll Your Own";
+            this.rdoRollOwn.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -145,50 +190,6 @@
             this.label4.Size = new System.Drawing.Size(63, 13);
             this.label4.TabIndex = 11;
             this.label4.Text = "User Name:";
-            // 
-            // rdoBasicAuth
-            // 
-            this.rdoBasicAuth.AutoSize = true;
-            this.rdoBasicAuth.Checked = true;
-            this.rdoBasicAuth.Location = new System.Drawing.Point(23, 19);
-            this.rdoBasicAuth.Name = "rdoBasicAuth";
-            this.rdoBasicAuth.Size = new System.Drawing.Size(122, 17);
-            this.rdoBasicAuth.TabIndex = 12;
-            this.rdoBasicAuth.TabStop = true;
-            this.rdoBasicAuth.Text = "Basic Authentication";
-            this.rdoBasicAuth.UseVisualStyleBackColor = true;
-            // 
-            // rdoNTMLAuth
-            // 
-            this.rdoNTMLAuth.AutoSize = true;
-            this.rdoNTMLAuth.Location = new System.Drawing.Point(23, 42);
-            this.rdoNTMLAuth.Name = "rdoNTMLAuth";
-            this.rdoNTMLAuth.Size = new System.Drawing.Size(108, 17);
-            this.rdoNTMLAuth.TabIndex = 13;
-            this.rdoNTMLAuth.Text = "NTLM (Windows)";
-            this.rdoNTMLAuth.UseVisualStyleBackColor = true;
-            // 
-            // rdoRollOwn
-            // 
-            this.rdoRollOwn.AutoSize = true;
-            this.rdoRollOwn.Checked = true;
-            this.rdoRollOwn.Location = new System.Drawing.Point(19, 17);
-            this.rdoRollOwn.Name = "rdoRollOwn";
-            this.rdoRollOwn.Size = new System.Drawing.Size(93, 17);
-            this.rdoRollOwn.TabIndex = 14;
-            this.rdoRollOwn.TabStop = true;
-            this.rdoRollOwn.Text = "Roll Your Own";
-            this.rdoRollOwn.UseVisualStyleBackColor = true;
-            // 
-            // rdoNetCred
-            // 
-            this.rdoNetCred.AutoSize = true;
-            this.rdoNetCred.Location = new System.Drawing.Point(19, 40);
-            this.rdoNetCred.Name = "rdoNetCred";
-            this.rdoNetCred.Size = new System.Drawing.Size(140, 17);
-            this.rdoNetCred.TabIndex = 15;
-            this.rdoNetCred.Text = "NetworkCredential Class";
-            this.rdoNetCred.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
