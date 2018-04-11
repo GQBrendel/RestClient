@@ -1,0 +1,10 @@
+C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\JSONParser\bin\Debug\JSONParser.exe.config
+C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\JSONParser\bin\Debug\JSONParser.exe
+C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\JSONParser\bin\Debug\JSONParser.pdb
+C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\JSONParser\obj\Debug\JSONParser.csprojResolveAssemblyReference.cache
+C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\JSONParser\obj\Debug\JSONParser.JSONParser.resources
+C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\JSONParser\obj\Debug\JSONParser.Properties.Resources.resources
+C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\JSONParser\obj\Debug\JSONParser.csproj.GenerateResource.cache
+C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\JSONParser\obj\Debug\JSONParser.csproj.CoreCompileInputs.cache
+C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\JSONParser\obj\Debug\JSONParser.exe
+C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\JSONParser\obj\Debug\JSONParser.pdb

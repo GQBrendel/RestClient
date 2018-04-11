@@ -53,7 +53,7 @@
             this.txtRequestURI.Name = "txtRequestURI";
             this.txtRequestURI.Size = new System.Drawing.Size(388, 20);
             this.txtRequestURI.TabIndex = 0;
-            this.txtRequestURI.Text = "http://dry-cliffs-19849.herokuapp.com/users.json";
+            this.txtRequestURI.Text = "http://localhost/authAPI";
             // 
             // txtResponse
             // 
