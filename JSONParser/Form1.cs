@@ -28,13 +28,23 @@ namespace JSONParser
         {
             try
             {
-                var jPerson = JsonConvert.DeserializeObject<dynamic>(strJSON); //
-
+                var jPerson = JsonConvert.DeserializeObject<jsonPerson>(strJSON);
                 debugOutput("Here's our JSON object: " + jPerson.ToString());
-                debugOutput("Here's the Name: " + jPerson.namse);
+                debugOutput("Here's the First Name: " + jPerson.firstname);
+
+                debugOutput("Here's the Street Address: " + jPerson.address.streetAddress);
+                
+                foreach(var num in jPerson.phoneNumbers)
+                {
+                    debugOutput(num.type.ToString() + " - " + num.number.ToString());
+                }
+
+                /*var jPerson = JsonConvert.DeserializeObject<dynamic>(strJSON);
+                debugOutput("Here's our JSON object: " + jPerson.ToString());
+                debugOutput("Here's the Name: " + jPerson.name);*/
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 debugOutput("We had a problem: " + ex.Message.ToString());
             }

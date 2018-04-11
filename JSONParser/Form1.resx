@@ -117,4 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="txtInput.Text" xml:space="preserve">
+    <value> {
+    "firstname" : "Roger",
+    "lastname" : "Moore",
+    "age" : 89,
+    "isAlive": false,
+    "address" :
+    {
+        "streetAddress" : "1 Main Street",
+        "city" : "London",
+        "postCode" : "N1 3XX"
+    },
+    "phoneNumbers" :
+    [
+        { "type" : "home", "number" : "51 9898-5821" },
+        { "type" : "mobile", "number" : "51 6566-2903" }
+    ]
+ }</value>
+  </data>
 </root>

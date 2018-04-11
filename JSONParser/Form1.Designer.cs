@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JSONParser));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cmdDeserialise = new System.Windows.Forms.Button();
             this.cmdClear = new System.Windows.Forms.Button();
@@ -94,6 +95,7 @@
             this.txtInput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtInput.Size = new System.Drawing.Size(494, 59);
             this.txtInput.TabIndex = 0;
+            this.txtInput.Text = resources.GetString("txtInput.Text");
             // 
             // txtDebugOutput
             // 
