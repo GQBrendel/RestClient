@@ -58,6 +58,7 @@
             this.cmdDeserialise.TabIndex = 1;
             this.cmdDeserialise.Text = "Deserialise";
             this.cmdDeserialise.UseVisualStyleBackColor = true;
+            this.cmdDeserialise.Click += new System.EventHandler(this.cmdDeserialise_Click);
             // 
             // cmdClear
             // 
@@ -65,8 +66,9 @@
             this.cmdClear.Name = "cmdClear";
             this.cmdClear.Size = new System.Drawing.Size(75, 23);
             this.cmdClear.TabIndex = 2;
-            this.cmdClear.Text = "Clear";
+            this.cmdClear.Text = "ClearDebug";
             this.cmdClear.UseVisualStyleBackColor = true;
+            this.cmdClear.Click += new System.EventHandler(this.cmdClear_Click);
             // 
             // groupBox2
             // 
