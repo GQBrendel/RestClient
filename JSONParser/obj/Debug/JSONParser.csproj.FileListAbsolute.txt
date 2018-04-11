@@ -8,3 +8,6 @@ C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\JSONParser\obj\De
 C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\JSONParser\obj\Debug\JSONParser.csproj.CoreCompileInputs.cache
 C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\JSONParser\obj\Debug\JSONParser.exe
 C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\JSONParser\obj\Debug\JSONParser.pdb
+C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\JSONParser\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\JSONParser\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Developer\Documents\Tutorial Projects\CSharpRestClien\JSONParser\obj\Debug\JSONParser.csproj.CopyComplete

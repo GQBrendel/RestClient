@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Newtonsoft.Json;
 
 namespace JSONParser
 {
@@ -20,14 +14,34 @@ namespace JSONParser
         #region UI events
         private void cmdDeserialise_Click(object sender, EventArgs e)
         {
-            debugOutput(txtInput.Text);
+            deserialiseJSON(txtInput.Text);
         }
         private void cmdClear_Click(object sender, EventArgs e)
         {
             txtDebugOutput.Text = string.Empty;
         }
-        #endregion 
-        #region Debug Outpu
+        #endregion
+
+
+        #region json functions
+        private void deserialiseJSON(string strJSON)
+        {
+            try
+            {
+                var jPerson = JsonConvert.DeserializeObject<dynamic>(strJSON); //
+
+                debugOutput("Here's our JSON object: " + jPerson.ToString());
+                debugOutput("Here's the Name: " + jPerson.namse);
+
+            }
+            catch(Exception ex)
+            {
+                debugOutput("We had a problem: " + ex.Message.ToString());
+            }
+        }
+
+        #endregion
+        #region Debug Output
         private void debugOutput(string strDebugText)
         {
             try
