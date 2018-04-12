@@ -35,16 +35,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rdoNTMLAuth = new System.Windows.Forms.RadioButton();
-            this.rdoBasicAuth = new System.Windows.Forms.RadioButton();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rdoNetCred = new System.Windows.Forms.RadioButton();
-            this.rdoRollOwn = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtRequestURI
@@ -107,72 +99,6 @@
             this.txtPassword.Size = new System.Drawing.Size(124, 20);
             this.txtPassword.TabIndex = 7;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.rdoNTMLAuth);
-            this.groupBox1.Controls.Add(this.rdoBasicAuth);
-            this.groupBox1.Location = new System.Drawing.Point(116, 76);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(178, 77);
-            this.groupBox1.TabIndex = 8;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Auth Type";
-            // 
-            // rdoNTMLAuth
-            // 
-            this.rdoNTMLAuth.AutoSize = true;
-            this.rdoNTMLAuth.Location = new System.Drawing.Point(23, 42);
-            this.rdoNTMLAuth.Name = "rdoNTMLAuth";
-            this.rdoNTMLAuth.Size = new System.Drawing.Size(108, 17);
-            this.rdoNTMLAuth.TabIndex = 13;
-            this.rdoNTMLAuth.Text = "NTLM (Windows)";
-            this.rdoNTMLAuth.UseVisualStyleBackColor = true;
-            // 
-            // rdoBasicAuth
-            // 
-            this.rdoBasicAuth.AutoSize = true;
-            this.rdoBasicAuth.Checked = true;
-            this.rdoBasicAuth.Location = new System.Drawing.Point(23, 19);
-            this.rdoBasicAuth.Name = "rdoBasicAuth";
-            this.rdoBasicAuth.Size = new System.Drawing.Size(122, 17);
-            this.rdoBasicAuth.TabIndex = 12;
-            this.rdoBasicAuth.TabStop = true;
-            this.rdoBasicAuth.Text = "Basic Authentication";
-            this.rdoBasicAuth.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.rdoNetCred);
-            this.groupBox2.Controls.Add(this.rdoRollOwn);
-            this.groupBox2.Location = new System.Drawing.Point(321, 78);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(183, 77);
-            this.groupBox2.TabIndex = 9;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Technique";
-            // 
-            // rdoNetCred
-            // 
-            this.rdoNetCred.AutoSize = true;
-            this.rdoNetCred.Location = new System.Drawing.Point(19, 40);
-            this.rdoNetCred.Name = "rdoNetCred";
-            this.rdoNetCred.Size = new System.Drawing.Size(140, 17);
-            this.rdoNetCred.TabIndex = 15;
-            this.rdoNetCred.Text = "NetworkCredential Class";
-            this.rdoNetCred.UseVisualStyleBackColor = true;
-            // 
-            // rdoRollOwn
-            // 
-            this.rdoRollOwn.AutoSize = true;
-            this.rdoRollOwn.Checked = true;
-            this.rdoRollOwn.Location = new System.Drawing.Point(19, 17);
-            this.rdoRollOwn.Name = "rdoRollOwn";
-            this.rdoRollOwn.Size = new System.Drawing.Size(93, 17);
-            this.rdoRollOwn.TabIndex = 14;
-            this.rdoRollOwn.TabStop = true;
-            this.rdoRollOwn.Text = "Roll Your Own";
-            this.rdoRollOwn.UseVisualStyleBackColor = true;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -198,8 +124,6 @@
             this.ClientSize = new System.Drawing.Size(621, 347);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.label3);
@@ -209,10 +133,6 @@
             this.Controls.Add(this.txtRequestURI);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,14 +147,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RadioButton rdoNTMLAuth;
-        private System.Windows.Forms.RadioButton rdoBasicAuth;
-        private System.Windows.Forms.RadioButton rdoNetCred;
-        private System.Windows.Forms.RadioButton rdoRollOwn;
     }
 }
 

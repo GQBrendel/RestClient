@@ -45,18 +45,9 @@ namespace CSharpRestClien
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(endPoint);
             request.Method = httpMethod.ToString();
 
-
-            if(authTech == authenticationTechnique.RollYourOwn)
-            {
-                //HArdcoded to Basic
-                string authHeader = System.Convert.ToBase64String(System.Text.ASCIIEncoding.ASCII.GetBytes(userName + ":" + userPassword));
-                request.Headers.Add("Authorization", "Basic " + authHeader);
-            }
-            else
-            {
-                NetworkCredential netCred = new NetworkCredential(userName, userPassword);
-                request.Credentials = netCred;
-            }
+            string authHeader = System.Convert.ToBase64String(System.Text.ASCIIEncoding.ASCII.GetBytes(userName + ":" + userPassword));
+            request.Headers.Add("Authorization", "Basic " + authHeader);
+           
 
             HttpWebResponse response = null;
             try

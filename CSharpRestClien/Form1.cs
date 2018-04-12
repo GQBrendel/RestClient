@@ -22,18 +22,7 @@ namespace CSharpRestClien
             RestClient rClient = new RestClient();
             rClient.endPoint = txtRequestURI.Text;
 
-            if(rdoRollOwn.Checked)
-            {
-                rClient.authTech = authenticationTechnique.RollYourOwn;
-                DebugOutput("AuthTechinique: " + rClient.authTech);
-                DebugOutput("AuthType " + rClient.authType);
-            }
-            else
-            {
-                rClient.authTech = authenticationTechnique.RollYourOwn;
-                DebugOutput("AuthTechinique: " + rClient.authTech);
-                DebugOutput("AuthType ??? - NetCred decides!");
-            }
+           
             rClient.userName = txtUserName.Text ;
             rClient.userPassword = txtPassword.Text;
 
