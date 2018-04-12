@@ -30,8 +30,22 @@ namespace CSharpRestClien
             string strResponse = string.Empty;
 
             strResponse = rClient.MakeRequest();
-
             DebugOutput(strResponse);
+        }
+        private void cmdClear_Click(object sender, EventArgs e)
+        {
+            txtResponse.Text = String.Empty;
+        }
+        private void cmdCopy_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                System.Windows.Forms.Clipboard.SetText(txtResponse.Text);
+            }
+            catch (Exception ex)
+            {
+                DebugOutput("Error: " + ex.ToString());
+            }
         }
 
         #region Debug
@@ -50,6 +64,5 @@ namespace CSharpRestClien
             }
         }
         #endregion
-
     }
 }
