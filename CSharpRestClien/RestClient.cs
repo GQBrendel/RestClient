@@ -33,6 +33,7 @@ namespace CSharpRestClien
         public authenticationTechnique authTech { get; set; }
         public string userName { get; set; }
         public string userPassword { get; set; }
+        public string postJSON { get; set; }
 
         public RestClient()
         {
@@ -48,6 +49,16 @@ namespace CSharpRestClien
             string authHeader = System.Convert.ToBase64String(System.Text.ASCIIEncoding.ASCII.GetBytes(userName + ":" + userPassword));
             request.Headers.Add("Authorization", "Basic " + authHeader);
            
+            if(request.Method == "POST" && postJSON != string.Empty)
+            {
+                request.ContentType = "application/json";
+                using (StreamWriter swJSONPayload = new StreamWriter(request.GetRequestStream()))//Setting up the writing object so we can actually start to write data.
+                //We are passing a GetRequestStream of our request allowing us to write our payload
+                {
+                    swJSONPayload.Write(postJSON);
+                    swJSONPayload.Close();
+                }
+            }
 
             HttpWebResponse response = null;
             try

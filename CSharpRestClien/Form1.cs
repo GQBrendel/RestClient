@@ -22,6 +22,16 @@ namespace CSharpRestClien
             RestClient rClient = new RestClient();
             rClient.endPoint = txtRequestURI.Text;
 
+            switch(cboVerb.Text)
+            {
+                case "POST":
+                    rClient.httpMethod = httpVerb.POST;
+                    rClient.postJSON = txtPOSTData.Text;
+                    break;
+                default:
+                    rClient.httpMethod = httpVerb.GET;
+                    break;
+            }
            
             rClient.userName = txtUserName.Text ;
             rClient.userPassword = txtPassword.Text;
