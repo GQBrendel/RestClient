@@ -33,7 +33,8 @@ namespace JSONParser
                 debugOutput("Here's the First Name: " + jPerson.firstname);
 
                 debugOutput("Here's the Street Address: " + jPerson.address.streetAddress);
-                
+
+                debugOutput("Phone Numbers:\n");
                 foreach(var num in jPerson.phoneNumbers)
                 {
                     debugOutput(num.type.ToString() + " - " + num.number.ToString());
